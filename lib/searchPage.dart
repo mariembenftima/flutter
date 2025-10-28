@@ -5,6 +5,25 @@ class searchPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(child: Text( 'searchPage',style: TextStyle(fontSize: 24),));
+    return Scaffold(
+      body: Column(
+        children: [
+          Expanded(child:
+          Container(
+            color: Colors.green,
+            child: Center(child: Text("flex2"),),
+          ),
+          ),
+          Expanded(
+            flex:3,
+            child:Container(
+            color: Colors.orange,
+            child: Center(child: Text("flex1"),),
+          )
+          ),
+          
+        ],
+      )
+    );
   }
 }

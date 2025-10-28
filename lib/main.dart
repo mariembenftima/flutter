@@ -38,6 +38,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
       body: IndexedStack(index: _currentpage, children: list),
       bottomNavigationBar: CurvedNavigationBar(
         backgroundColor: Colors.blueAccent,
